@@ -1,6 +1,6 @@
 lr: 0.1
-train_db_path: ~/Datasets
-test_db_path: ~/Datasets
+train_db_path: ./data
+test_db_path: ./data
 dataset: cifar10
 wm_path: ./data/trigger_set/
 wm_lbl: labels-cifar.txt
@@ -10,8 +10,8 @@ max_epochs: 60
 lradj: 20
 save_dir: ./checkpoint/
 save_model: model.t7
-load_path: ./checkpoint/ckpt.t7
-resume: False
+load_path: ./checkpoint/model_c10_nowm.t7
+resume: True
 wmtrain: True
 log_dir: ./log
 runname: train

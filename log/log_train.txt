@@ -8,3 +8,1523 @@ Test results:
 Loss: 2.324 | Acc: 0.000% (0/100)
 Test results:
 Loss: 2.306 | Acc: 4.000% (4/100)
+Test results:
+Loss: 2.305 | Acc: 9.000% (9/100)
+Epoch: 0
+Loss: nan | Acc: 10.153% (5178/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 1
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 2
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 3
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 4
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 5
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 6
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 7
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 8
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 9
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 10
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 11
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 12
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 13
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 14
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 15
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 16
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 17
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 18
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 19
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 20
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 21
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 22
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 23
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 24
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 25
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 26
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 27
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 28
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 29
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 30
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 31
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 32
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 33
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 34
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 35
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 36
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 37
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 38
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 39
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 40
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 41
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 42
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 43
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 44
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 45
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 46
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 47
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 48
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 49
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 50
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 51
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 52
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 53
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 54
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 55
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 56
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 57
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 58
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 59
+Loss: nan | Acc: 10.020% (5110/51000)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Test results:
+Loss: 2.311 | Acc: 11.000% (11/100)
+Epoch: 0
+Loss: nan | Acc: 10.077% (5196/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 1
+Loss: nan | Acc: 10.034% (5174/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 2
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 3
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 4
+Loss: nan | Acc: 10.026% (5170/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 5
+Loss: nan | Acc: 10.034% (5174/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 6
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 7
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 8
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 9
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 10
+Loss: nan | Acc: 10.026% (5170/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 11
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 12
+Loss: nan | Acc: 10.026% (5170/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 13
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 14
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 15
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 16
+Loss: nan | Acc: 10.026% (5170/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 17
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 18
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 19
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 20
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 21
+Loss: nan | Acc: 10.036% (5175/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 22
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 23
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 24
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 25
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 26
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 27
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 28
+Loss: nan | Acc: 10.032% (5173/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 29
+Loss: nan | Acc: 10.030% (5172/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 30
+Loss: nan | Acc: 10.028% (5171/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 31
+Loss: nan | Acc: 10.026% (5170/51564)
+Test results:
+Loss: nan | Acc: 10.000% (1000/10000)
+Test results:
+Loss: nan | Acc: 11.000% (11/100)
+Epoch: 0
+Loss: 12.479 | Acc: 13.106% (6553/50000)
+Test results:
+Loss: 2.301 | Acc: 11.010% (1101/10000)
+Epoch: 1
+Loss: 2.181 | Acc: 17.886% (8943/50000)
+Test results:
+Loss: 2.075 | Acc: 21.420% (2142/10000)
+Epoch: 2
+Loss: 1.989 | Acc: 25.282% (12641/50000)
+Test results:
+Loss: 1.856 | Acc: 29.290% (2929/10000)
+Epoch: 3
+Loss: 1.843 | Acc: 30.646% (15323/50000)
+Test results:
+Loss: 1.857 | Acc: 33.480% (3348/10000)
+Epoch: 4
+Loss: 1.725 | Acc: 35.632% (17816/50000)
+Test results:
+Loss: 1.596 | Acc: 41.530% (4153/10000)
+Epoch: 5
+Loss: 1.602 | Acc: 40.764% (20382/50000)
+Test results:
+Loss: 1.492 | Acc: 44.790% (4479/10000)
+Epoch: 6
+Loss: 1.505 | Acc: 44.722% (22361/50000)
+Test results:
+Loss: 1.558 | Acc: 43.960% (4396/10000)
+Epoch: 7
+Loss: 1.363 | Acc: 50.502% (25251/50000)
+Test results:
+Loss: 1.348 | Acc: 51.130% (5113/10000)
+Epoch: 8
+Loss: 1.223 | Acc: 56.136% (28068/50000)
+Test results:
+Loss: 1.278 | Acc: 55.910% (5591/10000)
+Epoch: 9
+Loss: 1.103 | Acc: 60.864% (30432/50000)
+Test results:
+Loss: 1.112 | Acc: 60.170% (6017/10000)
+Epoch: 10
+Loss: 0.982 | Acc: 65.360% (32680/50000)
+Test results:
+Loss: 1.177 | Acc: 63.060% (6306/10000)
+Epoch: 11
+Loss: 0.892 | Acc: 68.768% (34384/50000)
+Test results:
+Loss: 0.888 | Acc: 69.320% (6932/10000)
+Epoch: 12
+Loss: 0.818 | Acc: 71.670% (35835/50000)
+Test results:
+Loss: 1.020 | Acc: 66.190% (6619/10000)
+Epoch: 13
+Loss: 0.756 | Acc: 73.934% (36967/50000)
+Test results:
+Loss: 0.779 | Acc: 73.560% (7356/10000)
+Epoch: 14
+Loss: 0.724 | Acc: 75.206% (37603/50000)
+Test results:
+Loss: 0.903 | Acc: 71.240% (7124/10000)
+Epoch: 15
+Loss: 0.687 | Acc: 76.522% (38261/50000)
+Test results:
+Loss: 0.739 | Acc: 74.840% (7484/10000)
+Epoch: 16
+Loss: 0.666 | Acc: 77.166% (38583/50000)
+Test results:
+Loss: 0.733 | Acc: 75.320% (7532/10000)
+Epoch: 17
+Loss: 0.638 | Acc: 78.088% (39044/50000)
+Test results:
+Loss: 0.987 | Acc: 66.540% (6654/10000)
+Epoch: 18
+Loss: 0.628 | Acc: 78.582% (39291/50000)
+Test results:
+Loss: 0.782 | Acc: 73.800% (7380/10000)
+Epoch: 19
+Loss: 0.612 | Acc: 79.148% (39574/50000)
+Test results:
+Loss: 1.064 | Acc: 65.980% (6598/10000)
+Epoch: 20
+Loss: 0.419 | Acc: 85.660% (42830/50000)
+Test results:
+Loss: 0.411 | Acc: 85.790% (8579/10000)
+Epoch: 21
+Loss: 0.352 | Acc: 87.800% (43900/50000)
+Test results:
+Loss: 0.395 | Acc: 86.230% (8623/10000)
+Epoch: 22
+Loss: 0.332 | Acc: 88.420% (44210/50000)
+Test results:
+Loss: 0.382 | Acc: 86.970% (8697/10000)
+Epoch: 23
+Loss: 0.313 | Acc: 89.118% (44559/50000)
+Test results:
+Loss: 0.373 | Acc: 87.160% (8716/10000)
+Epoch: 24
+Loss: 0.287 | Acc: 89.966% (44983/50000)
+Test results:
+Loss: 0.369 | Acc: 87.410% (8741/10000)
+Epoch: 25
+Loss: 0.278 | Acc: 90.264% (45132/50000)
+Test results:
+Loss: 0.360 | Acc: 87.780% (8778/10000)
+Epoch: 26
+Loss: 0.266 | Acc: 90.740% (45370/50000)
+Test results:
+Loss: 0.398 | Acc: 87.010% (8701/10000)
+Epoch: 27
+Loss: 0.257 | Acc: 91.016% (45508/50000)
+Test results:
+Loss: 0.372 | Acc: 87.380% (8738/10000)
+Epoch: 28
+Loss: 0.243 | Acc: 91.536% (45768/50000)
+Test results:
+Loss: 0.361 | Acc: 87.950% (8795/10000)
+Epoch: 29
+Loss: 0.235 | Acc: 91.724% (45862/50000)
+Test results:
+Loss: 0.380 | Acc: 87.420% (8742/10000)
+Epoch: 30
+Loss: 0.229 | Acc: 91.946% (45973/50000)
+Test results:
+Loss: 0.387 | Acc: 87.660% (8766/10000)
+Epoch: 31
+Loss: 0.217 | Acc: 92.420% (46210/50000)
+Test results:
+Loss: 0.364 | Acc: 88.240% (8824/10000)
+Epoch: 32
+Loss: 0.218 | Acc: 92.376% (46188/50000)
+Test results:
+Loss: 0.382 | Acc: 87.980% (8798/10000)
+Epoch: 33
+Loss: 0.209 | Acc: 92.746% (46373/50000)
+Test results:
+Loss: 0.357 | Acc: 88.140% (8814/10000)
+Epoch: 34
+Loss: 0.204 | Acc: 92.816% (46408/50000)
+Test results:
+Loss: 0.363 | Acc: 88.450% (8845/10000)
+Epoch: 35
+Loss: 0.199 | Acc: 93.032% (46516/50000)
+Test results:
+Loss: 0.375 | Acc: 88.150% (8815/10000)
+Epoch: 36
+Loss: 0.199 | Acc: 92.930% (46465/50000)
+Test results:
+Loss: 0.373 | Acc: 88.160% (8816/10000)
+Epoch: 37
+Loss: 0.191 | Acc: 93.336% (46668/50000)
+Test results:
+Loss: 0.372 | Acc: 88.240% (8824/10000)
+Epoch: 38
+Loss: 0.186 | Acc: 93.368% (46684/50000)
+Test results:
+Loss: 0.361 | Acc: 88.650% (8865/10000)
+Epoch: 39
+Loss: 0.176 | Acc: 93.840% (46920/50000)
+Test results:
+Loss: 0.380 | Acc: 88.150% (8815/10000)
+Epoch: 40
+Loss: 0.129 | Acc: 95.598% (47799/50000)
+Test results:
+Loss: 0.311 | Acc: 90.210% (9021/10000)
+Epoch: 41
+Loss: 0.108 | Acc: 96.474% (48237/50000)
+Test results:
+Loss: 0.309 | Acc: 90.340% (9034/10000)
+Epoch: 42
+Loss: 0.099 | Acc: 96.704% (48352/50000)
+Test results:
+Loss: 0.306 | Acc: 90.640% (9064/10000)
+Epoch: 43
+Loss: 0.091 | Acc: 96.972% (48486/50000)
+Test results:
+Loss: 0.310 | Acc: 90.630% (9063/10000)
+Epoch: 44
+Loss: 0.086 | Acc: 97.232% (48616/50000)
+Test results:
+Loss: 0.309 | Acc: 90.610% (9061/10000)
+Epoch: 45
+Loss: 0.083 | Acc: 97.272% (48636/50000)
+Test results:
+Loss: 0.308 | Acc: 90.690% (9069/10000)
+Epoch: 46
+Loss: 0.075 | Acc: 97.568% (48784/50000)
+Test results:
+Loss: 0.308 | Acc: 90.780% (9078/10000)
+Epoch: 47
+Loss: 0.074 | Acc: 97.566% (48783/50000)
+Test results:
+Loss: 0.314 | Acc: 90.740% (9074/10000)
+Epoch: 48
+Loss: 0.072 | Acc: 97.698% (48849/50000)
+Test results:
+Loss: 0.315 | Acc: 90.860% (9086/10000)
+Epoch: 49
+Loss: 0.068 | Acc: 97.734% (48867/50000)
+Test results:
+Loss: 0.326 | Acc: 90.580% (9058/10000)
+Epoch: 50
+Loss: 0.066 | Acc: 97.898% (48949/50000)
+Test results:
+Loss: 0.325 | Acc: 90.650% (9065/10000)
+Epoch: 51
+Loss: 0.063 | Acc: 98.022% (49011/50000)
+Test results:
+Loss: 0.318 | Acc: 90.840% (9084/10000)
+Epoch: 52
+Loss: 0.062 | Acc: 97.958% (48979/50000)
+Test results:
+Loss: 0.322 | Acc: 90.840% (9084/10000)
+Epoch: 53
+Loss: 0.059 | Acc: 98.084% (49042/50000)
+Test results:
+Loss: 0.330 | Acc: 90.780% (9078/10000)
+Epoch: 54
+Loss: 0.055 | Acc: 98.166% (49083/50000)
+Test results:
+Loss: 0.333 | Acc: 90.730% (9073/10000)
+Epoch: 55
+Loss: 0.054 | Acc: 98.274% (49137/50000)
+Test results:
+Loss: 0.329 | Acc: 90.910% (9091/10000)
+Epoch: 56
+Loss: 0.053 | Acc: 98.278% (49139/50000)
+Test results:
+Loss: 0.335 | Acc: 90.860% (9086/10000)
+Epoch: 57
+Loss: 0.050 | Acc: 98.462% (49231/50000)
+Test results:
+Loss: 0.336 | Acc: 90.650% (9065/10000)
+Epoch: 58
+Loss: 0.049 | Acc: 98.412% (49206/50000)
+Test results:
+Loss: 0.336 | Acc: 90.880% (9088/10000)
+Epoch: 59
+Loss: 0.047 | Acc: 98.460% (49230/50000)
+Test results:
+Loss: 0.344 | Acc: 91.000% (9100/10000)
+Test results:
+Loss: 2.299 | Acc: 10.000% (10/100)
+Epoch: 0
+Loss: 4.406 | Acc: 10.308% (5257/51000)
+Test results:
+Loss: 2.330 | Acc: 10.430% (1043/10000)
+Test results:
+Loss: 4.870 | Acc: 10.000% (10/100)
+Epoch: 1
+Loss: 2.301 | Acc: 10.365% (5286/51000)
+Test results:
+Loss: 2.310 | Acc: 10.440% (1044/10000)
+Test results:
+Loss: 3.421 | Acc: 11.000% (11/100)
+Epoch: 2
+Loss: 2.297 | Acc: 10.714% (5464/51000)
+Test results:
+Loss: 2.295 | Acc: 11.270% (1127/10000)
+Test results:
+Loss: 2.433 | Acc: 11.000% (11/100)
+Epoch: 3
+Loss: 2.097 | Acc: 20.249% (10327/51000)
+Test results:
+Loss: 1.918 | Acc: 25.590% (2559/10000)
+Test results:
+Loss: 3.070 | Acc: 12.000% (12/100)
+Epoch: 4
+Loss: 1.870 | Acc: 29.580% (15086/51000)
+Test results:
+Loss: 1.738 | Acc: 35.490% (3549/10000)
+Test results:
+Loss: 2.721 | Acc: 7.000% (7/100)
+Epoch: 5
+Loss: 1.648 | Acc: 39.300% (20043/51000)
+Test results:
+Loss: 1.531 | Acc: 44.890% (4489/10000)
+Test results:
+Loss: 2.990 | Acc: 14.000% (14/100)
+Epoch: 6
+Loss: 1.439 | Acc: 47.571% (24261/51000)
+Test results:
+Loss: 1.309 | Acc: 51.890% (5189/10000)
+Test results:
+Loss: 2.557 | Acc: 13.000% (13/100)
+Epoch: 7
+Loss: 1.256 | Acc: 54.978% (28039/51000)
+Test results:
+Loss: 1.137 | Acc: 60.400% (6040/10000)
+Test results:
+Loss: 2.322 | Acc: 21.000% (21/100)
+Epoch: 8
+Loss: 1.084 | Acc: 61.731% (31483/51000)
+Test results:
+Loss: 1.072 | Acc: 61.500% (6150/10000)
+Test results:
+Loss: 2.099 | Acc: 22.000% (22/100)
+Epoch: 9
+Loss: 0.965 | Acc: 66.429% (33879/51000)
+Test results:
+Loss: 0.997 | Acc: 66.050% (6605/10000)
+Test results:
+Loss: 2.123 | Acc: 28.000% (28/100)
+Epoch: 10
+Loss: 0.845 | Acc: 70.545% (35978/51000)
+Test results:
+Loss: 0.953 | Acc: 68.940% (6894/10000)
+Test results:
+Loss: 2.125 | Acc: 25.000% (25/100)
+Epoch: 11
+Loss: 0.766 | Acc: 73.735% (37605/51000)
+Test results:
+Loss: 0.868 | Acc: 71.090% (7109/10000)
+Test results:
+Loss: 1.843 | Acc: 34.000% (34/100)
+Epoch: 12
+Loss: 0.715 | Acc: 75.586% (38549/51000)
+Test results:
+Loss: 0.869 | Acc: 70.220% (7022/10000)
+Test results:
+Loss: 1.620 | Acc: 45.000% (45/100)
+Epoch: 13
+Loss: 0.679 | Acc: 76.576% (39054/51000)
+Test results:
+Loss: 0.828 | Acc: 73.060% (7306/10000)
+Test results:
+Loss: 1.283 | Acc: 57.000% (57/100)
+Epoch: 14
+Loss: 0.644 | Acc: 77.922% (39740/51000)
+Test results:
+Loss: 0.704 | Acc: 76.120% (7612/10000)
+Test results:
+Loss: 1.223 | Acc: 58.000% (58/100)
+Epoch: 15
+Loss: 0.613 | Acc: 79.225% (40405/51000)
+Test results:
+Loss: 0.717 | Acc: 75.740% (7574/10000)
+Test results:
+Loss: 1.067 | Acc: 63.000% (63/100)
+Epoch: 16
+Loss: 0.601 | Acc: 79.441% (40515/51000)
+Test results:
+Loss: 0.927 | Acc: 71.550% (7155/10000)
+Test results:
+Loss: 1.268 | Acc: 59.000% (59/100)
+Epoch: 17
+Loss: 0.592 | Acc: 79.855% (40726/51000)
+Test results:
+Loss: 1.800 | Acc: 58.960% (5896/10000)
+Test results:
+Loss: 1.545 | Acc: 52.000% (52/100)
+Epoch: 18
+Loss: 0.571 | Acc: 80.551% (41081/51000)
+Test results:
+Loss: 0.818 | Acc: 73.850% (7385/10000)
+Test results:
+Loss: 1.318 | Acc: 61.000% (61/100)
+Epoch: 19
+Loss: 0.557 | Acc: 81.131% (41377/51000)
+Test results:
+Loss: 0.900 | Acc: 70.650% (7065/10000)
+Test results:
+Loss: 0.924 | Acc: 72.000% (72/100)
+Epoch: 20
+Loss: 0.353 | Acc: 87.953% (44856/51000)
+Test results:
+Loss: 0.355 | Acc: 87.940% (8794/10000)
+Test results:
+Loss: 0.296 | Acc: 92.000% (92/100)
+Epoch: 21
+Loss: 0.293 | Acc: 89.906% (45852/51000)
+Test results:
+Loss: 0.341 | Acc: 88.260% (8826/10000)
+Test results:
+Loss: 0.199 | Acc: 96.000% (96/100)
+Epoch: 22
+Loss: 0.269 | Acc: 90.733% (46274/51000)
+Test results:
+Loss: 0.331 | Acc: 88.650% (8865/10000)
+Test results:
+Loss: 0.243 | Acc: 93.000% (93/100)
+Epoch: 23
+Loss: 0.251 | Acc: 91.208% (46516/51000)
+Test results:
+Loss: 0.331 | Acc: 88.800% (8880/10000)
+Test results:
+Loss: 0.210 | Acc: 94.000% (94/100)
+Epoch: 24
+Loss: 0.236 | Acc: 91.820% (46828/51000)
+Test results:
+Loss: 0.327 | Acc: 88.970% (8897/10000)
+Test results:
+Loss: 0.114 | Acc: 97.000% (97/100)
+Epoch: 25
+Loss: 0.223 | Acc: 92.316% (47081/51000)
+Test results:
+Loss: 0.336 | Acc: 89.080% (8908/10000)
+Test results:
+Loss: 0.099 | Acc: 97.000% (97/100)
+Epoch: 26
+Loss: 0.213 | Acc: 92.575% (47213/51000)
+Test results:
+Loss: 0.330 | Acc: 89.140% (8914/10000)
+Test results:
+Loss: 0.201 | Acc: 95.000% (95/100)
+Epoch: 27
+Loss: 0.206 | Acc: 92.829% (47343/51000)
+Test results:
+Loss: 0.308 | Acc: 89.980% (8998/10000)
+Test results:
+Loss: 0.084 | Acc: 98.000% (98/100)
+Epoch: 28
+Loss: 0.191 | Acc: 93.265% (47565/51000)
+Test results:
+Loss: 0.307 | Acc: 90.150% (9015/10000)
+Test results:
+Loss: 0.093 | Acc: 99.000% (99/100)
+Epoch: 29
+Loss: 0.186 | Acc: 93.531% (47701/51000)
+Test results:
+Loss: 0.310 | Acc: 89.890% (8989/10000)
+Test results:
+Loss: 0.271 | Acc: 92.000% (92/100)
+Epoch: 30
+Loss: 0.178 | Acc: 93.739% (47807/51000)
+Test results:
+Loss: 0.327 | Acc: 89.590% (8959/10000)
+Test results:
+Loss: 0.188 | Acc: 94.000% (94/100)
+Epoch: 31
+Loss: 0.172 | Acc: 94.033% (47957/51000)
+Test results:
+Loss: 0.334 | Acc: 89.260% (8926/10000)
+Test results:
+Loss: 0.072 | Acc: 99.000% (99/100)
+Epoch: 32
+Loss: 0.166 | Acc: 94.245% (48065/51000)
+Test results:
+Loss: 0.362 | Acc: 89.030% (8903/10000)
+Test results:
+Loss: 0.123 | Acc: 95.000% (95/100)
+Epoch: 33
+Loss: 0.162 | Acc: 94.280% (48083/51000)
+Test results:
+Loss: 0.338 | Acc: 89.670% (8967/10000)
+Test results:
+Loss: 0.181 | Acc: 95.000% (95/100)
+Epoch: 34
+Loss: 0.162 | Acc: 94.341% (48114/51000)
+Test results:
+Loss: 0.360 | Acc: 89.210% (8921/10000)
+Test results:
+Loss: 0.077 | Acc: 99.000% (99/100)
+Epoch: 35
+Loss: 0.153 | Acc: 94.676% (48285/51000)
+Test results:
+Loss: 0.343 | Acc: 89.650% (8965/10000)
+Test results:
+Loss: 0.081 | Acc: 98.000% (98/100)
+Epoch: 36
+Loss: 0.154 | Acc: 94.696% (48295/51000)
+Test results:
+Loss: 0.348 | Acc: 89.220% (8922/10000)
+Test results:
+Loss: 0.201 | Acc: 93.000% (93/100)
+Epoch: 37
+Loss: 0.151 | Acc: 94.576% (48234/51000)
+Test results:
+Loss: 0.327 | Acc: 90.070% (9007/10000)
+Test results:
+Loss: 0.152 | Acc: 96.000% (96/100)
+Epoch: 38
+Loss: 0.145 | Acc: 94.792% (48344/51000)
+Test results:
+Loss: 0.382 | Acc: 89.000% (8900/10000)
+Test results:
+Loss: 0.079 | Acc: 99.000% (99/100)
+Epoch: 39
+Loss: 0.143 | Acc: 94.931% (48415/51000)
+Test results:
+Loss: 0.391 | Acc: 88.710% (8871/10000)
+Test results:
+Loss: 0.061 | Acc: 98.000% (98/100)
+Epoch: 40
+Loss: 0.090 | Acc: 96.929% (49434/51000)
+Test results:
+Loss: 0.287 | Acc: 91.590% (9159/10000)
+Test results:
+Loss: 0.020 | Acc: 100.000% (100/100)
+Epoch: 41
+Loss: 0.072 | Acc: 97.669% (49811/51000)
+Test results:
+Loss: 0.288 | Acc: 91.780% (9178/10000)
+Test results:
+Loss: 0.016 | Acc: 100.000% (100/100)
+Epoch: 42
+Loss: 0.065 | Acc: 97.867% (49912/51000)
+Test results:
+Loss: 0.286 | Acc: 92.010% (9201/10000)
+Test results:
+Loss: 0.014 | Acc: 100.000% (100/100)
+Epoch: 43
+Loss: 0.059 | Acc: 98.114% (50038/51000)
+Test results:
+Loss: 0.290 | Acc: 91.930% (9193/10000)
+Test results:
+Loss: 0.011 | Acc: 100.000% (100/100)
+Epoch: 44
+Loss: 0.055 | Acc: 98.188% (50076/51000)
+Test results:
+Loss: 0.289 | Acc: 91.870% (9187/10000)
+Test results:
+Loss: 0.011 | Acc: 100.000% (100/100)
+Epoch: 45
+Loss: 0.050 | Acc: 98.435% (50202/51000)
+Test results:
+Loss: 0.288 | Acc: 91.940% (9194/10000)
+Test results:
+Loss: 0.007 | Acc: 100.000% (100/100)
+Epoch: 46
+Loss: 0.048 | Acc: 98.427% (50198/51000)
+Test results:
+Loss: 0.296 | Acc: 91.880% (9188/10000)
+Test results:
+Loss: 0.008 | Acc: 100.000% (100/100)
+Epoch: 47
+Loss: 0.044 | Acc: 98.629% (50301/51000)
+Test results:
+Loss: 0.303 | Acc: 91.960% (9196/10000)
+Test results:
+Loss: 0.009 | Acc: 99.000% (99/100)
+Epoch: 48
+Loss: 0.042 | Acc: 98.645% (50309/51000)
+Test results:
+Loss: 0.297 | Acc: 92.110% (9211/10000)
+Test results:
+Loss: 0.014 | Acc: 99.000% (99/100)
+Epoch: 49
+Loss: 0.042 | Acc: 98.625% (50299/51000)
+Test results:
+Loss: 0.300 | Acc: 91.890% (9189/10000)
+Test results:
+Loss: 0.005 | Acc: 100.000% (100/100)
+Epoch: 50
+Loss: 0.038 | Acc: 98.873% (50425/51000)
+Test results:
+Loss: 0.304 | Acc: 91.820% (9182/10000)
+Test results:
+Loss: 0.006 | Acc: 100.000% (100/100)
+Epoch: 51
+Loss: 0.037 | Acc: 98.808% (50392/51000)
+Test results:
+Loss: 0.302 | Acc: 92.080% (9208/10000)
+Test results:
+Loss: 0.005 | Acc: 100.000% (100/100)
+Epoch: 52
+Loss: 0.035 | Acc: 98.908% (50443/51000)
+Test results:
+Loss: 0.312 | Acc: 91.900% (9190/10000)
+Test results:
+Loss: 0.004 | Acc: 100.000% (100/100)
+Epoch: 53
+Loss: 0.033 | Acc: 98.957% (50468/51000)
+Test results:
+Loss: 0.302 | Acc: 92.160% (9216/10000)
+Test results:
+Loss: 0.005 | Acc: 100.000% (100/100)
+Epoch: 54
+Loss: 0.031 | Acc: 99.033% (50507/51000)
+Test results:
+Loss: 0.313 | Acc: 91.960% (9196/10000)
+Test results:
+Loss: 0.008 | Acc: 100.000% (100/100)
+Epoch: 55
+Loss: 0.029 | Acc: 99.143% (50563/51000)
+Test results:
+Loss: 0.310 | Acc: 91.990% (9199/10000)
+Test results:
+Loss: 0.003 | Acc: 100.000% (100/100)
+Epoch: 56
+Loss: 0.028 | Acc: 99.139% (50561/51000)
+Test results:
+Loss: 0.311 | Acc: 92.080% (9208/10000)
+Test results:
+Loss: 0.004 | Acc: 100.000% (100/100)
+Epoch: 57
+Loss: 0.027 | Acc: 99.198% (50591/51000)
+Test results:
+Loss: 0.319 | Acc: 91.840% (9184/10000)
+Test results:
+Loss: 0.004 | Acc: 100.000% (100/100)
+Epoch: 58
+Loss: 0.026 | Acc: 99.251% (50618/51000)
+Test results:
+Loss: 0.317 | Acc: 91.910% (9191/10000)
+Test results:
+Loss: 0.002 | Acc: 100.000% (100/100)
+Epoch: 59
+Loss: 0.025 | Acc: 99.218% (50601/51000)
+Test results:
+Loss: 0.315 | Acc: 92.140% (9214/10000)
+Test results:
+Loss: 0.002 | Acc: 100.000% (100/100)
+Test results:
+Loss: 6.318 | Acc: 13.000% (13/100)
+Epoch: 59
+Loss: 0.083 | Acc: 97.661% (49807/51000)
+Test results:
+Loss: 0.347 | Acc: 90.870% (9087/10000)
+Test results:
+Loss: 0.397 | Acc: 92.000% (92/100)
+Epoch: 60
+Loss: 0.051 | Acc: 98.459% (50214/51000)
+Test results:
+Loss: 0.342 | Acc: 91.010% (9101/10000)
+Test results:
+Loss: 0.322 | Acc: 93.000% (93/100)
+Epoch: 61
+Loss: 0.048 | Acc: 98.545% (50258/51000)
+Test results:
+Loss: 0.340 | Acc: 91.060% (9106/10000)
+Test results:
+Loss: 0.270 | Acc: 94.000% (94/100)
+Epoch: 62
+Loss: 0.048 | Acc: 98.516% (50243/51000)
+Test results:
+Loss: 0.343 | Acc: 90.990% (9099/10000)
+Test results:
+Loss: 0.235 | Acc: 96.000% (96/100)
+Epoch: 63
+Loss: 0.048 | Acc: 98.547% (50259/51000)
+Test results:
+Loss: 0.340 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.200 | Acc: 98.000% (98/100)
+Epoch: 64
+Loss: 0.046 | Acc: 98.635% (50304/51000)
+Test results:
+Loss: 0.341 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.170 | Acc: 98.000% (98/100)
+Epoch: 65
+Loss: 0.044 | Acc: 98.671% (50322/51000)
+Test results:
+Loss: 0.341 | Acc: 91.160% (9116/10000)
+Test results:
+Loss: 0.151 | Acc: 99.000% (99/100)
+Epoch: 66
+Loss: 0.045 | Acc: 98.675% (50324/51000)
+Test results:
+Loss: 0.342 | Acc: 91.150% (9115/10000)
+Test results:
+Loss: 0.133 | Acc: 100.000% (100/100)
+Epoch: 67
+Loss: 0.043 | Acc: 98.739% (50357/51000)
+Test results:
+Loss: 0.340 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.113 | Acc: 100.000% (100/100)
+Epoch: 68
+Loss: 0.042 | Acc: 98.776% (50376/51000)
+Test results:
+Loss: 0.340 | Acc: 91.160% (9116/10000)
+Test results:
+Loss: 0.101 | Acc: 100.000% (100/100)
+Epoch: 69
+Loss: 0.042 | Acc: 98.816% (50396/51000)
+Test results:
+Loss: 0.343 | Acc: 91.160% (9116/10000)
+Test results:
+Loss: 0.082 | Acc: 100.000% (100/100)
+Epoch: 70
+Loss: 0.040 | Acc: 98.847% (50412/51000)
+Test results:
+Loss: 0.341 | Acc: 91.140% (9114/10000)
+Test results:
+Loss: 0.078 | Acc: 100.000% (100/100)
+Epoch: 71
+Loss: 0.041 | Acc: 98.755% (50365/51000)
+Test results:
+Loss: 0.341 | Acc: 91.260% (9126/10000)
+Test results:
+Loss: 0.068 | Acc: 100.000% (100/100)
+Epoch: 72
+Loss: 0.040 | Acc: 98.767% (50371/51000)
+Test results:
+Loss: 0.342 | Acc: 91.020% (9102/10000)
+Test results:
+Loss: 0.058 | Acc: 100.000% (100/100)
+Epoch: 73
+Loss: 0.038 | Acc: 98.888% (50433/51000)
+Test results:
+Loss: 0.343 | Acc: 91.120% (9112/10000)
+Test results:
+Loss: 0.054 | Acc: 100.000% (100/100)
+Epoch: 74
+Loss: 0.039 | Acc: 98.843% (50410/51000)
+Test results:
+Loss: 0.343 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.045 | Acc: 100.000% (100/100)
+Epoch: 75
+Loss: 0.037 | Acc: 98.967% (50473/51000)
+Test results:
+Loss: 0.346 | Acc: 90.980% (9098/10000)
+Test results:
+Loss: 0.045 | Acc: 100.000% (100/100)
+Epoch: 76
+Loss: 0.038 | Acc: 98.912% (50445/51000)
+Test results:
+Loss: 0.344 | Acc: 91.070% (9107/10000)
+Test results:
+Loss: 0.035 | Acc: 100.000% (100/100)
+Epoch: 77
+Loss: 0.038 | Acc: 98.900% (50439/51000)
+Test results:
+Loss: 0.344 | Acc: 90.990% (9099/10000)
+Test results:
+Loss: 0.037 | Acc: 100.000% (100/100)
+Epoch: 78
+Loss: 0.037 | Acc: 98.918% (50448/51000)
+Test results:
+Loss: 0.345 | Acc: 90.980% (9098/10000)
+Test results:
+Loss: 0.032 | Acc: 100.000% (100/100)
+Epoch: 79
+Loss: 0.038 | Acc: 98.835% (50406/51000)
+Test results:
+Loss: 0.344 | Acc: 91.020% (9102/10000)
+Test results:
+Loss: 0.031 | Acc: 100.000% (100/100)
+Epoch: 80
+Loss: 0.038 | Acc: 98.851% (50414/51000)
+Test results:
+Loss: 0.345 | Acc: 91.020% (9102/10000)
+Test results:
+Loss: 0.030 | Acc: 100.000% (100/100)
+Epoch: 81
+Loss: 0.037 | Acc: 98.929% (50454/51000)
+Test results:
+Loss: 0.343 | Acc: 91.110% (9111/10000)
+Test results:
+Loss: 0.028 | Acc: 100.000% (100/100)
+Epoch: 82
+Loss: 0.037 | Acc: 98.947% (50463/51000)
+Test results:
+Loss: 0.345 | Acc: 91.050% (9105/10000)
+Test results:
+Loss: 0.033 | Acc: 100.000% (100/100)
+Epoch: 83
+Loss: 0.036 | Acc: 98.971% (50475/51000)
+Test results:
+Loss: 0.343 | Acc: 91.110% (9111/10000)
+Test results:
+Loss: 0.031 | Acc: 100.000% (100/100)
+Epoch: 84
+Loss: 0.037 | Acc: 98.949% (50464/51000)
+Test results:
+Loss: 0.347 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 85
+Loss: 0.036 | Acc: 98.965% (50472/51000)
+Test results:
+Loss: 0.346 | Acc: 91.080% (9108/10000)
+Test results:
+Loss: 0.029 | Acc: 100.000% (100/100)
+Epoch: 86
+Loss: 0.038 | Acc: 98.867% (50422/51000)
+Test results:
+Loss: 0.344 | Acc: 91.140% (9114/10000)
+Test results:
+Loss: 0.031 | Acc: 100.000% (100/100)
+Epoch: 87
+Loss: 0.036 | Acc: 98.959% (50469/51000)
+Test results:
+Loss: 0.347 | Acc: 91.050% (9105/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 88
+Loss: 0.036 | Acc: 98.918% (50448/51000)
+Test results:
+Loss: 0.347 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 89
+Loss: 0.037 | Acc: 98.906% (50442/51000)
+Test results:
+Loss: 0.347 | Acc: 90.980% (9098/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 90
+Loss: 0.036 | Acc: 98.988% (50484/51000)
+Test results:
+Loss: 0.347 | Acc: 91.000% (9100/10000)
+Test results:
+Loss: 0.027 | Acc: 100.000% (100/100)
+Epoch: 91
+Loss: 0.036 | Acc: 98.937% (50458/51000)
+Test results:
+Loss: 0.346 | Acc: 91.010% (9101/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 92
+Loss: 0.037 | Acc: 98.851% (50414/51000)
+Test results:
+Loss: 0.345 | Acc: 91.080% (9108/10000)
+Test results:
+Loss: 0.027 | Acc: 100.000% (100/100)
+Epoch: 93
+Loss: 0.036 | Acc: 98.924% (50451/51000)
+Test results:
+Loss: 0.345 | Acc: 91.020% (9102/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 94
+Loss: 0.036 | Acc: 98.935% (50457/51000)
+Test results:
+Loss: 0.343 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 95
+Loss: 0.035 | Acc: 99.020% (50500/51000)
+Test results:
+Loss: 0.345 | Acc: 91.140% (9114/10000)
+Test results:
+Loss: 0.027 | Acc: 100.000% (100/100)
+Epoch: 96
+Loss: 0.037 | Acc: 98.876% (50427/51000)
+Test results:
+Loss: 0.346 | Acc: 91.140% (9114/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 97
+Loss: 0.036 | Acc: 98.951% (50465/51000)
+Test results:
+Loss: 0.346 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 98
+Loss: 0.035 | Acc: 98.984% (50482/51000)
+Test results:
+Loss: 0.346 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 99
+Loss: 0.036 | Acc: 98.920% (50449/51000)
+Test results:
+Loss: 0.346 | Acc: 91.160% (9116/10000)
+Test results:
+Loss: 0.023 | Acc: 100.000% (100/100)
+Epoch: 100
+Loss: 0.035 | Acc: 99.024% (50502/51000)
+Test results:
+Loss: 0.344 | Acc: 91.110% (9111/10000)
+Test results:
+Loss: 0.028 | Acc: 100.000% (100/100)
+Epoch: 101
+Loss: 0.036 | Acc: 98.912% (50445/51000)
+Test results:
+Loss: 0.346 | Acc: 91.030% (9103/10000)
+Test results:
+Loss: 0.027 | Acc: 100.000% (100/100)
+Epoch: 102
+Loss: 0.036 | Acc: 98.984% (50482/51000)
+Test results:
+Loss: 0.347 | Acc: 91.120% (9112/10000)
+Test results:
+Loss: 0.029 | Acc: 100.000% (100/100)
+Epoch: 103
+Loss: 0.034 | Acc: 99.020% (50500/51000)
+Test results:
+Loss: 0.346 | Acc: 91.130% (9113/10000)
+Test results:
+Loss: 0.033 | Acc: 99.000% (99/100)
+Epoch: 104
+Loss: 0.036 | Acc: 98.955% (50467/51000)
+Test results:
+Loss: 0.346 | Acc: 91.070% (9107/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 105
+Loss: 0.035 | Acc: 98.976% (50478/51000)
+Test results:
+Loss: 0.344 | Acc: 91.050% (9105/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 106
+Loss: 0.036 | Acc: 98.949% (50464/51000)
+Test results:
+Loss: 0.347 | Acc: 91.030% (9103/10000)
+Test results:
+Loss: 0.023 | Acc: 100.000% (100/100)
+Epoch: 107
+Loss: 0.035 | Acc: 98.996% (50488/51000)
+Test results:
+Loss: 0.348 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 108
+Loss: 0.034 | Acc: 99.057% (50519/51000)
+Test results:
+Loss: 0.348 | Acc: 91.090% (9109/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 109
+Loss: 0.036 | Acc: 98.953% (50466/51000)
+Test results:
+Loss: 0.350 | Acc: 91.130% (9113/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 110
+Loss: 0.035 | Acc: 98.994% (50487/51000)
+Test results:
+Loss: 0.347 | Acc: 91.050% (9105/10000)
+Test results:
+Loss: 0.027 | Acc: 100.000% (100/100)
+Epoch: 111
+Loss: 0.037 | Acc: 98.922% (50450/51000)
+Test results:
+Loss: 0.347 | Acc: 91.040% (9104/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 112
+Loss: 0.036 | Acc: 98.978% (50479/51000)
+Test results:
+Loss: 0.344 | Acc: 91.190% (9119/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 113
+Loss: 0.035 | Acc: 99.033% (50507/51000)
+Test results:
+Loss: 0.347 | Acc: 91.050% (9105/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 114
+Loss: 0.036 | Acc: 98.924% (50451/51000)
+Test results:
+Loss: 0.345 | Acc: 91.030% (9103/10000)
+Test results:
+Loss: 0.026 | Acc: 100.000% (100/100)
+Epoch: 115
+Loss: 0.035 | Acc: 98.967% (50473/51000)
+Test results:
+Loss: 0.345 | Acc: 91.000% (9100/10000)
+Test results:
+Loss: 0.025 | Acc: 100.000% (100/100)
+Epoch: 116
+Loss: 0.035 | Acc: 98.975% (50477/51000)
+Test results:
+Loss: 0.346 | Acc: 91.140% (9114/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 117
+Loss: 0.035 | Acc: 98.980% (50480/51000)
+Test results:
+Loss: 0.344 | Acc: 91.080% (9108/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)
+Epoch: 118
+Loss: 0.037 | Acc: 98.890% (50434/51000)
+Test results:
+Loss: 0.344 | Acc: 91.070% (9107/10000)
+Test results:
+Loss: 0.024 | Acc: 100.000% (100/100)

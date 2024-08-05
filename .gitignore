@@ -1,3 +1,9 @@
 *.pyc
 **/__pycache__
 __pycache__ 
+checkpoint
+data
+log
+results
+memo.txt
+accuracy_cifer10.xlsx

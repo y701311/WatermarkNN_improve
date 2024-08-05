@@ -1,12 +1,11 @@
 import numpy as np
 import torch
 from torch.autograd import Variable
+from torch import nn
 
 from helpers.utils import progress_bar
 
 # Train function
-
-
 def train(epoch, net, criterion, optimizer, logfile, loader, device, wmloader=False, tune_all=True):
     print('\nEpoch: %d' % epoch)
     net.train()
@@ -143,3 +142,69 @@ def test(net, criterion, logfile, loader, device):
                 % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
     # return the acc.
     return 100. * correct / total
+
+# added
+def distillation_loss(y, labels, teacher_scores, T, alpha):
+    return nn.KLDivLoss()(torch.log_softmax(y / T, dim=1), torch.softmax(teacher_scores / T, dim=1)) * (T * T * 2.0 * alpha) + \
+           nn.CrossEntropyLoss()(y, labels) * (1. - alpha)
+
+# added
+# Distillation
+def distill(epoch, teacher_net, student_net, criterion, optimizer, logfile, loader, device, T=2.0, alpha=0.5, wmloader=False, tune_all=True):
+    print('\nEpoch: %d' % epoch)
+    teacher_net.eval()
+    student_net.train()
+    train_loss = 0
+    correct = 0
+    total = 0
+    iteration = -1
+    wm_correct = 0
+    print_every = 5
+    l_lambda = 1.2
+
+    # update only the last layer
+    # if not tune_all:
+    #     if type(net) is torch.nn.DataParallel:
+    #         net.module.freeze_hidden_layers()
+    #     else:
+    #         net.freeze_hidden_layers()
+
+    # get the watermark images
+    wminputs, wmtargets = [], []
+    if wmloader:
+        for wm_idx, (wminput, wmtarget) in enumerate(wmloader):
+            wminput, wmtarget = wminput.to(device), wmtarget.to(device)
+            wminputs.append(wminput)
+            wmtargets.append(wmtarget)
+
+        # the wm_idx to start from
+        wm_idx = np.random.randint(len(wminputs))
+    for batch_idx, (inputs, targets) in enumerate(loader):
+        iteration += 1
+        inputs, targets = inputs.to(device), targets.to(device)
+
+        # add wmimages and targets
+        if wmloader:
+            inputs = torch.cat([inputs, wminputs[(wm_idx + batch_idx) % len(wminputs)]], dim=0)
+            targets = torch.cat([targets, wmtargets[(wm_idx + batch_idx) % len(wminputs)]], dim=0)
+
+        optimizer.zero_grad()
+        teacher_outputs = teacher_net(inputs)
+        student_outputs = student_net(inputs)
+        loss = distillation_loss(student_outputs, targets, teacher_outputs, T, alpha)
+
+        loss.backward()
+        optimizer.step()
+
+        train_loss += loss.item()
+        _, predicted = torch.max(student_outputs.data, 1)
+        total += targets.size(0)
+        correct += predicted.eq(targets.data).cpu().sum()
+
+        progress_bar(batch_idx, len(loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+                     % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+
+    with open(logfile, 'a') as f:
+        f.write('Epoch: %d\n' % epoch)
+        f.write('Loss: %.3f | Acc: %.3f%% (%d/%d)\n'
+                % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))

@@ -1,3 +1,4 @@
+# added to check distillation resistance
 from __future__ import print_function
 
 import argparse
@@ -13,7 +14,7 @@ import torch.optim as optim
 from helpers.loaders import *
 from helpers.utils import adjust_learning_rate
 from models import ResNet18
-from trainer import test, train
+from trainer import test, train, distill
 
 def main():
     parser = argparse.ArgumentParser(description='Train CIFAR-10 models with watermaks.')
@@ -30,8 +31,6 @@ def main():
     parser.add_argument('--save_dir', default='./checkpoint/', help='the path to the model dir')
     parser.add_argument('--save_model', default='model.t7', help='model name')
     parser.add_argument('--load_path', default='./checkpoint/ckpt.t7', help='the path to the pre-trained model, to be used with resume flag')
-    parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
-    parser.add_argument('--wmtrain', '-wmt', action='store_true', help='train with wms?')
     parser.add_argument('--log_dir', default='./log', help='the path the log dir')
     parser.add_argument('--runname', default='train', help='the exp name')
 
@@ -55,59 +54,63 @@ def main():
         args.dataset, args.train_db_path, args.test_db_path, args.batch_size)
 
     wmloader = None
-    if args.wmtrain:
-        print('Loading watermark images')
-        wmloader = getwmloader(args.wm_path, args.wm_batch_size, args.wm_lbl)
+    print('Loading watermark images')
+    wmloader = getwmloader(args.wm_path, args.wm_batch_size, args.wm_lbl)
 
     # create the model
-    if args.resume:
-        # Load checkpoint.
-        print('==> Resuming from checkpoint..')
-        assert os.path.exists(args.load_path), 'Error: no checkpoint found!'
-        checkpoint = torch.load(args.load_path)
-        net = checkpoint['net']
-        acc = checkpoint['acc']
-        start_epoch = checkpoint['epoch']
-    else:
-        print('==> Building model..')
-        net = ResNet18(num_classes=n_classes)
+    # Load checkpoint.
+    print('==> Loading from checkpoint..')
+    assert os.path.exists(args.load_path), 'Error: no checkpoint found!'
+    checkpoint = torch.load(args.load_path)
+    teacher_net = checkpoint['net']
+    # acc = checkpoint['acc']
+    # start_epoch = checkpoint['epoch']
+    
+    print('==> Building model..')
+    student_net = ResNet18(num_classes=n_classes)
 
-    net = net.to(device)
+    teacher_net = teacher_net.to(device)
+    student_net = student_net.to(device)
     # support cuda
     if device == 'cuda':
         print('Using CUDA')
         print('Parallel training on {0} GPUs.'.format(torch.cuda.device_count()))
-        net = torch.nn.DataParallel(net, device_ids=range(torch.cuda.device_count()))
+        teacher_net = torch.nn.DataParallel(teacher_net, device_ids=range(torch.cuda.device_count()))
+        student_net = torch.nn.DataParallel(student_net, device_ids=range(torch.cuda.device_count()))
         cudnn.benchmark = True
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+    optimizer = optim.SGD(student_net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
 
     # loading wm examples
-    if args.wmtrain:
-        print("WM acc:")
-        test(net, criterion, logfile, wmloader, device)
+    # if args.wmtrain:
+    print("WM acc:")
+    test(student_net, criterion, logfile, wmloader, device)
 
     print('Start training..') ######## added
 
+    # distillation parameters
+    T = 2
+    alpha = 0.5
+    
     # start training
     for epoch in range(start_epoch, start_epoch + args.max_epochs):
         # adjust learning rate
         adjust_learning_rate(args.lr, optimizer, epoch, args.lradj)
 
-        train(epoch, net, criterion, optimizer, logfile,
-            trainloader, device, wmloader)
+        distill(epoch, teacher_net, student_net, None, optimizer, logfile,
+            trainloader, device, T, alpha, wmloader=None)
 
         print("Test acc:")
-        acc = test(net, criterion, logfile, testloader, device)
+        acc = test(student_net, criterion, logfile, testloader, device)
 
-        if args.wmtrain:
-            print("WM acc:")
-            test(net, criterion, logfile, wmloader, device)
+        # if args.wmtrain:
+        print("WM acc:")
+        test(student_net, criterion, logfile, wmloader, device)
 
         print('Saving..')
         state = {
-            'net': net.module if device == 'cuda' else net, #### is -> ==
+            'net': student_net.module if device == 'cuda' else student_net, #### is -> ==
             'acc': acc,
             'epoch': epoch,
         }
