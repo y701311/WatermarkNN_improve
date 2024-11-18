@@ -45,7 +45,8 @@ def init_params(net):
                 init.constant(m.bias, 0)
 
 
-_, term_width = os.popen('stty size', 'r').read().split()
+# _, term_width = os.popen('stty size', 'r').read().split() # for linux
+term_width, _ = os.get_terminal_size()  # for windows
 term_width = int(term_width)
 
 TOTAL_BAR_LENGTH = 65.

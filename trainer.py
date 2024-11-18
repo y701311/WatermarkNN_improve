@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import torch
 from torch.autograd import Variable
@@ -42,18 +43,29 @@ def train(epoch, net, criterion, optimizer, logfile, loader, device, wmloader=Fa
         if wmloader:
             inputs = torch.cat([inputs, wminputs[(wm_idx + batch_idx) % len(wminputs)]], dim=0)
             targets = torch.cat([targets, wmtargets[(wm_idx + batch_idx) % len(wminputs)]], dim=0)
+            
+        inputs = inputs.to(torch.float32)
+        targets = targets.to(torch.float32)
 
         optimizer.zero_grad()
         outputs = net(inputs)
-        loss = criterion(outputs, targets)
+        # loss = criterion(outputs, targets)
+        loss = criterion(nn.functional.log_softmax(outputs, dim=1), targets)
+        
+        # lossのトリガー部分をλ倍にする
+        # data_size_nowm = len(inputs)
+        # lambda_loss = 5
+        # loss = criterion(nn.functional.log_softmax(outputs[:data_size_nowm], dim=1), targets[:data_size_nowm]) \
+        #     + lambda_loss * criterion(nn.functional.log_softmax(outputs[data_size_nowm:], dim=1), targets[data_size_nowm:])
 
         loss.backward()
         optimizer.step()
 
         train_loss += loss.item()
+        _, target_data = torch.max(targets.data, 1)
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
-        correct += predicted.eq(targets.data).cpu().sum()
+        correct += predicted.eq(target_data).cpu().sum()
 
         progress_bar(batch_idx, len(loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
@@ -62,6 +74,9 @@ def train(epoch, net, criterion, optimizer, logfile, loader, device, wmloader=Fa
         f.write('Epoch: %d\n' % epoch)
         f.write('Loss: %.3f | Acc: %.3f%% (%d/%d)\n'
                 % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+    
+    # loss and acc
+    return (train_loss / (batch_idx + 1)), (100. * correct / total)
 
 
 # train function in a teacher-student fashion
@@ -98,7 +113,8 @@ def train_teacher(epoch, net, criterion, optimizer, use_cuda, logfile, loader, w
 
         optimizer.zero_grad()
         outputs = net(inputs)
-        loss = criterion(outputs, targets)
+        # loss = criterion(outputs, targets)
+        loss = criterion(nn.functional.log_softmax(outputs, dim=1), targets)
 
         loss.backward()
         optimizer.step()
@@ -126,12 +142,14 @@ def test(net, criterion, logfile, loader, device):
     for batch_idx, (inputs, targets) in enumerate(loader):
         inputs, targets = inputs.to(device), targets.to(device)
         outputs = net(inputs)
-        loss = criterion(outputs, targets)
+        # loss = criterion(outputs, targets)
+        loss = criterion(nn.functional.log_softmax(outputs, dim=1), targets)
 
         test_loss += loss.item()
+        _, target_data = torch.max(targets.data, 1)
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
-        correct += predicted.eq(targets.data).cpu().sum()
+        correct += predicted.eq(target_data).cpu().sum()
 
         progress_bar(batch_idx, len(loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
@@ -140,8 +158,63 @@ def test(net, criterion, logfile, loader, device):
         f.write('Test results:\n')
         f.write('Loss: %.3f | Acc: %.3f%% (%d/%d)\n'
                 % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+        
+    # loss and acc
+    return (test_loss / (batch_idx + 1)), (100. * correct / total)
+
+# Test function for trigger subsets
+def trigger_subsets_test(net, criterion, logfile, loader, device, wm_path, labels_path, subset_size):
+    net.eval()
+    test_loss = 0
+    correct = 0
+    total = 0
+    wm_outputs = []
+    for batch_idx, (inputs, targets) in enumerate(loader):
+        inputs, targets = inputs.to(device), targets.to(device)
+        outputs = net(inputs)
+        # loss = criterion(outputs, targets)
+        loss = criterion(nn.functional.log_softmax(outputs, dim=1), targets)
+        
+        outputs_softmax = nn.functional.softmax(outputs, dim=1)
+        for output in outputs_softmax:
+            wm_outputs.append(output.cpu().detach().numpy())
+
+        test_loss += loss.item()
+        _, target_data = torch.max(targets.data, 1)
+        _, predicted = torch.max(outputs.data, 1)
+        total += targets.size(0)
+        correct += predicted.eq(target_data).cpu().sum()
+
+        progress_bar(batch_idx, len(loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+                     % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+
+    wm_targets = np.loadtxt(os.path.join(wm_path, labels_path))
+    subset_outputs = []
+    subset_targets = []
+    for i in range(0, len(wm_targets), subset_size):
+        np.set_printoptions(precision=3)
+        print()
+        print(f"{wm_outputs[i:i+subset_size]=}")
+        print(f"{wm_targets[i:i+subset_size]=}")
+        print(f"{np.average(wm_outputs[i:i+subset_size], axis=0)=}")
+        print(f"{np.average(wm_targets[i:i+subset_size], axis=0)=}")
+        subset_outputs.append(np.average(wm_outputs[i:i+subset_size], axis=0))
+        subset_targets.append(np.average(wm_targets[i:i+subset_size], axis=0))
+        
+    subset_correct = 0
+    subset_num = len(wm_targets) / subset_size
+    for subset_output, subset_target in zip(subset_outputs, subset_targets):
+        if np.argmax(subset_output) == np.argmax(subset_target):
+            subset_correct += 1
+    print(f"WM subset acc: {100. * subset_correct / subset_num}% ({subset_correct}/{subset_num})")
+
+    with open(logfile, 'a') as f:
+        f.write('Test results:\n')
+        f.write('Loss: %.3f | Acc: %.3f%% (%d/%d)\n'
+                % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+        
     # return the acc.
-    return 100. * correct / total
+    return 100. * subset_correct / subset_num
 
 # added
 def distillation_loss(y, labels, teacher_scores, T, alpha):

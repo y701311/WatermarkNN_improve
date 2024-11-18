@@ -42,6 +42,14 @@ def _getdatatransformsdb(datatype):
 
     return transform_train, transform_test
 
+def one_hot_transform(targets, n_class):
+    _targets = []
+    for class_id in targets:
+        one_hot_target = np.zeros(n_class)
+        one_hot_target[int(class_id)] = 1
+        _targets.append(one_hot_target)
+    _targets = np.array(_targets)
+    return torch.tensor(_targets)
 
 def getdataloader(datatype, train_db_path, test_db_path, batch_size):
     # get transformations
@@ -57,6 +65,8 @@ def getdataloader(datatype, train_db_path, test_db_path, batch_size):
         testset = torchvision.datasets.CIFAR10(root=test_db_path,
                                                train=False, download=True,
                                                transform=transform_test)
+        trainset.targets = one_hot_transform(trainset.targets, 10)
+        testset.targets = one_hot_transform(testset.targets, 10)
         n_classes = 10
     elif datatype.lower() == CIFAR100:
         print("Using CIFAR100 dataset.")
@@ -97,12 +107,18 @@ def getwmloader(wm_path, batch_size, labels_path):
         transform_wm)
     img_nlbl = []
     wm_targets = np.loadtxt(os.path.join(wm_path, labels_path))
+    if labels_path == "labels-cifar.txt":
+        wm_targets = one_hot_transform(wm_targets, 10)
     for idx, (path, target) in enumerate(wmset.imgs):
-        img_nlbl.append((path, int(wm_targets[idx])))
+        img_nlbl.append((path, wm_targets[idx]))
     wmset.imgs = img_nlbl
 
     wmloader = torch.utils.data.DataLoader(
         wmset, batch_size=batch_size, shuffle=True,
         num_workers=4, pin_memory=True)
+    
+    wmloader_noshuffle = torch.utils.data.DataLoader(
+        wmset, batch_size=batch_size, shuffle=False,
+        num_workers=4, pin_memory=True)
 
-    return wmloader
+    return wmloader, wmloader_noshuffle
