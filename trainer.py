@@ -270,9 +270,10 @@ def distill(epoch, teacher_net, student_net, criterion, optimizer, logfile, load
         optimizer.step()
 
         train_loss += loss.item()
+        _, target_data = torch.max(targets.data, 1)
         _, predicted = torch.max(student_outputs.data, 1)
         total += targets.size(0)
-        correct += predicted.eq(targets.data).cpu().sum()
+        correct += predicted.eq(target_data).cpu().sum()
 
         progress_bar(batch_idx, len(loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
@@ -281,3 +282,6 @@ def distill(epoch, teacher_net, student_net, criterion, optimizer, logfile, load
         f.write('Epoch: %d\n' % epoch)
         f.write('Loss: %.3f | Acc: %.3f%% (%d/%d)\n'
                 % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+    
+    # loss and acc
+    return (train_loss / (batch_idx + 1)), (100. * correct / total)

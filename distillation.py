@@ -10,11 +10,12 @@ import torch
 import torch.backends.cudnn as cudnn
 import torch.nn as nn
 import torch.optim as optim
+import matplotlib.pyplot as plt
 
 from helpers.loaders import *
 from helpers.utils import adjust_learning_rate
 from models import ResNet18
-from trainer import test, train, distill
+from trainer import test, train, distill, trigger_subsets_test
 
 def main():
     parser = argparse.ArgumentParser(description='Train CIFAR-10 models with watermaks.')
@@ -55,7 +56,7 @@ def main():
 
     wmloader = None
     print('Loading watermark images')
-    wmloader = getwmloader(args.wm_path, args.wm_batch_size, args.wm_lbl)
+    wmloader, wmloader_noshuffle = getwmloader(args.wm_path, args.wm_batch_size, args.wm_lbl)
 
     # create the model
     # Load checkpoint.
@@ -79,13 +80,24 @@ def main():
         student_net = torch.nn.DataParallel(student_net, device_ids=range(torch.cuda.device_count()))
         cudnn.benchmark = True
 
-    criterion = nn.CrossEntropyLoss()
+    # criterion = nn.CrossEntropyLoss()
+    criterion = nn.KLDivLoss()
     optimizer = optim.SGD(student_net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+    
+    # 学習曲線の描画用
+    train_loss_list = []
+    train_acc_list = []
+    test_loss_list = []
+    test_acc_list = []
+    wm_loss_list = []
+    wm_acc_list = []
+    wm_subset_acc_list = []
 
     # loading wm examples
     # if args.wmtrain:
     print("WM acc:")
-    test(student_net, criterion, logfile, wmloader, device)
+    test_loss, test_acc = test(student_net, criterion, logfile, wmloader, device)
+    wm_subset_acc = trigger_subsets_test(student_net, criterion, logfile, wmloader_noshuffle, device, args.wm_path, args.wm_lbl, subset_size=5)
 
     print('Start training..') ######## added
 
@@ -98,25 +110,62 @@ def main():
         # adjust learning rate
         adjust_learning_rate(args.lr, optimizer, epoch, args.lradj)
 
-        distill(epoch, teacher_net, student_net, None, optimizer, logfile,
+        train_loss, train_acc = distill(epoch, teacher_net, student_net, None, optimizer, logfile,
             trainloader, device, T, alpha, wmloader=None)
 
         print("Test acc:")
-        acc = test(student_net, criterion, logfile, testloader, device)
+        test_loss, test_acc = test(student_net, criterion, logfile, testloader, device)
 
         # if args.wmtrain:
         print("WM acc:")
-        test(student_net, criterion, logfile, wmloader, device)
+        wm_loss, wm_acc = test(student_net, criterion, logfile, wmloader, device)
+        print("WM set acc:")
+        wm_subset_acc = trigger_subsets_test(student_net, criterion, logfile, wmloader_noshuffle, device, args.wm_path, args.wm_lbl, subset_size=5)
+
+        train_loss_list.append(train_loss)
+        train_acc_list.append(train_acc)
+        test_loss_list.append(test_loss)
+        test_acc_list.append(test_acc)
+        wm_loss_list.append(wm_loss)
+        wm_acc_list.append(wm_acc)
+        wm_subset_acc_list.append(wm_subset_acc)
 
         print('Saving..')
         state = {
             'net': student_net.module if device == 'cuda' else student_net, #### is -> ==
-            'acc': acc,
+            'acc': test_acc,
             'epoch': epoch,
         }
         if not os.path.isdir(args.save_dir):
             os.mkdir(args.save_dir)
         torch.save(state, os.path.join(args.save_dir, args.save_model))
+    
+    # 学習曲線の描画
+    plt.figure(figsize=(12, 5))
+    
+    plt.subplot(1, 2, 1)
+    plt.plot(train_loss_list, label='Train Loss', marker='o')
+    plt.plot(test_loss_list, label='Test Loss', marker='o')
+    plt.plot(wm_loss_list, label='WM Loss', marker='o')
+    plt.title('Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.grid(True)
+    
+    plt.subplot(1, 2, 2)
+    plt.plot(train_acc_list, label='Train Accuracy', marker='o')
+    plt.plot(test_acc_list, label='Test Accuracy', marker='o')
+    plt.plot(wm_acc_list, label='WM Accuracy', marker='o')
+    plt.plot(wm_subset_acc_list, label='WM Subset Accuracy', marker='o')
+    plt.title('Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy (%)')
+    plt.legend()
+    plt.grid(True)
+
+    plt.tight_layout()
+    plt.savefig("learning_curve_distillation.png")
 
 
 if __name__ == '__main__':
