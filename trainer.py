@@ -189,17 +189,26 @@ def trigger_subsets_test(net, criterion, logfile, loader, device, wm_path, label
                      % (test_loss / (batch_idx + 1), 100. * correct / total, correct, total))
 
     wm_targets = np.loadtxt(os.path.join(wm_path, labels_path))
+    subset_id = wm_targets[:, 0]
+    wm_targets = wm_targets[:, 1:]
+    wm_outputs = np.array(wm_outputs)
+    wm_subset_indexed = []
+    for id, output, target in zip(subset_id, wm_outputs, wm_targets):
+        wm_subset_indexed.append([id, output, target])
+    wm_subset_indexed.sort(key=lambda x: x[0])
+    wm_subset_indexed = np.array(wm_subset_indexed, dtype=object)
+    
     subset_outputs = []
     subset_targets = []
-    for i in range(0, len(wm_targets), subset_size):
-        np.set_printoptions(precision=3)
-        print()
-        print(f"{wm_outputs[i:i+subset_size]=}")
-        print(f"{wm_targets[i:i+subset_size]=}")
-        print(f"{np.average(wm_outputs[i:i+subset_size], axis=0)=}")
-        print(f"{np.average(wm_targets[i:i+subset_size], axis=0)=}")
-        subset_outputs.append(np.average(wm_outputs[i:i+subset_size], axis=0))
-        subset_targets.append(np.average(wm_targets[i:i+subset_size], axis=0))
+    for i in range(0, len(wm_subset_indexed), subset_size):
+        # np.set_printoptions(precision=3)
+        # print()
+        # print(f"wm_output: {wm_subset_indexed[i:i+subset_size, 1]=}")
+        # print(f"wm_target: {wm_subset_indexed[i:i+subset_size, 2]=}")
+        # print(f"wm_output: {np.average(wm_subset_indexed[i:i+subset_size, 1], axis=0)=}")
+        # print(f"wm_target: {np.average(wm_subset_indexed[i:i+subset_size, 2], axis=0)=}")
+        subset_outputs.append(np.average(wm_subset_indexed[i:i+subset_size, 1], axis=0))
+        subset_targets.append(np.average(wm_subset_indexed[i:i+subset_size, 2], axis=0))
         
     subset_correct = 0
     subset_num = len(wm_targets) / subset_size

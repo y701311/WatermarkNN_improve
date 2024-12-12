@@ -122,11 +122,11 @@ def main():
             wm_subset_acc = trigger_subsets_test(net, criterion, logfile, wmloader_noshuffle, device, args.wm_path, args.wm_lbl, subset_size=5)
         
         train_loss_list.append(train_loss)
-        train_acc_list.append(train_acc)
+        train_acc_list.append(train_acc.item())
         test_loss_list.append(test_loss)
-        test_acc_list.append(test_acc)
+        test_acc_list.append(test_acc.item())
         wm_loss_list.append(wm_loss)
-        wm_acc_list.append(wm_acc)
+        wm_acc_list.append(wm_acc.item())
         wm_subset_acc_list.append(wm_subset_acc)
 
         print('Saving..')
@@ -138,6 +138,11 @@ def main():
         if not os.path.isdir(args.save_dir):
             os.mkdir(args.save_dir)
         torch.save(state, os.path.join(args.save_dir, args.save_model))
+    
+    print(f"{train_acc_list=}")
+    print(f"{test_acc_list=}")
+    print(f"{wm_acc_list=}")
+    print(f"{wm_subset_acc_list=}")
     
     # 学習曲線の描画
     plt.figure(figsize=(12, 5))

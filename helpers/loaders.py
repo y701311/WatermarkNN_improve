@@ -109,6 +109,13 @@ def getwmloader(wm_path, batch_size, labels_path):
     wm_targets = np.loadtxt(os.path.join(wm_path, labels_path))
     if labels_path == "labels-cifar.txt":
         wm_targets = one_hot_transform(wm_targets, 10)
+    else:
+        # print("in getwmloader")
+        # print(f"{wm_targets=}")
+        subset_id = wm_targets[:, 0]
+        wm_targets = wm_targets[:, 1:]
+        # print(f"{subset_id=}")
+        # print(f"{wm_targets=}")
     for idx, (path, target) in enumerate(wmset.imgs):
         img_nlbl.append((path, wm_targets[idx]))
     wmset.imgs = img_nlbl
